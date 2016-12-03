@@ -19,6 +19,12 @@ namespace Projekt
             InitializeComponent();
         }
 
-       
+        private void btnPrzegladaj_Click(object sender, EventArgs e)
+        {
+            var wynik = openFileDialog1.ShowDialog();
+            if (wynik != DialogResult.OK)
+                return;
+            tbSciezka.Text = openFileDialog1.FileName;
+        }
     }
 }

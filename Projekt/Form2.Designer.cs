@@ -30,10 +30,11 @@
         {
             this.cbInstrumenty = new System.Windows.Forms.ComboBox();
             this.cbDzwieki = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnPrzegladaj = new System.Windows.Forms.Button();
+            this.tbSciezka = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // cbInstrumenty
@@ -52,21 +53,22 @@
             this.cbDzwieki.Size = new System.Drawing.Size(46, 21);
             this.cbDzwieki.TabIndex = 1;
             // 
-            // button1
+            // btnPrzegladaj
             // 
-            this.button1.Location = new System.Drawing.Point(576, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPrzegladaj.Location = new System.Drawing.Point(572, 80);
+            this.btnPrzegladaj.Name = "btnPrzegladaj";
+            this.btnPrzegladaj.Size = new System.Drawing.Size(27, 23);
+            this.btnPrzegladaj.TabIndex = 2;
+            this.btnPrzegladaj.Text = "...";
+            this.btnPrzegladaj.UseVisualStyleBackColor = true;
+            this.btnPrzegladaj.Click += new System.EventHandler(this.btnPrzegladaj_Click);
             // 
-            // textBox1
+            // tbSciezka
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(448, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbSciezka.Location = new System.Drawing.Point(105, 83);
+            this.tbSciezka.Name = "tbSciezka";
+            this.tbSciezka.Size = new System.Drawing.Size(448, 20);
+            this.tbSciezka.TabIndex = 3;
             // 
             // label1
             // 
@@ -86,6 +88,10 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Instrumenty";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,8 +99,8 @@
             this.ClientSize = new System.Drawing.Size(623, 168);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbSciezka);
+            this.Controls.Add(this.btnPrzegladaj);
             this.Controls.Add(this.cbDzwieki);
             this.Controls.Add(this.cbInstrumenty);
             this.Name = "Form2";
@@ -108,9 +114,10 @@
 
         private System.Windows.Forms.ComboBox cbInstrumenty;
         private System.Windows.Forms.ComboBox cbDzwieki;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnPrzegladaj;
+        private System.Windows.Forms.TextBox tbSciezka;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
