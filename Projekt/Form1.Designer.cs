@@ -59,6 +59,7 @@
             this.listaInstrumentów.Name = "listaInstrumentów";
             this.listaInstrumentów.Size = new System.Drawing.Size(120, 94);
             this.listaInstrumentów.TabIndex = 2;
+            this.listaInstrumentów.SelectedIndexChanged += new System.EventHandler(this.listaInstrumentów_SelectedIndexChanged);
             // 
             // label1
             // 

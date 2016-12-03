@@ -38,5 +38,15 @@ namespace Projekt
         {
             return Assembly.GetExecutingAssembly().GetTypes().Where(t => t.IsSubclassOf(typeof(Instrument))).ToArray();
         }
+
+        private void listaInstrumentów_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var lista = sender as CheckedListBox;
+            if (lista == null)
+                return;
+
+            int index = lista.SelectedIndex;
+            lista.SetItemChecked(index, !lista.GetItemChecked(index));
+        }
     }
 }
