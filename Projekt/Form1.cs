@@ -22,6 +22,15 @@ namespace Projekt
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            var instrumenty = PobierzInstrumenty();
+            foreach (var item in instrumenty)
+            {
+                listaInstrumentów.Items.Add(item);
+                listaInstrumentów.DisplayMember = "Name";
+
+                var instrument = (Instrument)Activator.CreateInstance(item);
+                this.instrumenty.Add(instrument);
+            }
 
         }
 
