@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Gitara
+    class Gitara : Instrument
     {
     }
 }
