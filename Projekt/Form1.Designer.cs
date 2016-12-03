@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDodajDźwięki = new System.Windows.Forms.Button();
             this.listaInstrumentów = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -43,14 +43,15 @@
             this.button1.Text = "Graj";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDodajDźwięki
             // 
-            this.button2.Location = new System.Drawing.Point(13, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Dodaj dźwięki";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDodajDźwięki.Location = new System.Drawing.Point(13, 226);
+            this.btnDodajDźwięki.Name = "btnDodajDźwięki";
+            this.btnDodajDźwięki.Size = new System.Drawing.Size(86, 23);
+            this.btnDodajDźwięki.TabIndex = 1;
+            this.btnDodajDźwięki.Text = "Dodaj dźwięki";
+            this.btnDodajDźwięki.UseVisualStyleBackColor = true;
+            this.btnDodajDźwięki.Click += new System.EventHandler(this.btnDodajDźwięki_Click);
             // 
             // listaInstrumentów
             // 
@@ -77,7 +78,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnDodajDźwięki);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -90,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDodajDźwięki;
         private System.Windows.Forms.CheckedListBox listaInstrumentów;
         private System.Windows.Forms.Label label1;
     }

@@ -48,5 +48,10 @@ namespace Projekt
             int index = lista.SelectedIndex;
             lista.SetItemChecked(index, !lista.GetItemChecked(index));
         }
+
+        private void btnDodajDźwięki_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
