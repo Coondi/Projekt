@@ -49,9 +49,11 @@ namespace Projekt
             lista.SetItemChecked(index, !lista.GetItemChecked(index));
         }
 
-        private void btnDodajDźwięki_Click(object sender, EventArgs e)
+        private void btnDodajDźwięki_Click(object sender, EventArgs e)  //po kliknieciu przycisku dodaj dzwieki wyswietli sie drugie okienko
         {
-            
+            var noweOkienko = new Form2();
+            noweOkienko.instrumenty = this.instrumenty;
+            noweOkienko.ShowDialog();   
         }
     }
 }

@@ -12,6 +12,8 @@ namespace Projekt
 {
     public partial class Form2 : Form
     {
+        public List<Instrument> instrumenty;
+
         public Form2()
         {
             InitializeComponent();
