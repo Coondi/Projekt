@@ -19,12 +19,21 @@ namespace Projekt
             InitializeComponent();
         }
 
-        private void btnPrzegladaj_Click(object sender, EventArgs e)
+        private void btnPrzegladaj_Click(object sender, EventArgs e) // po klikniecu przycisku przegladaj(...) wyswietla okno dialogowe do przegladania
         {
             var wynik = openFileDialog1.ShowDialog();
             if (wynik != DialogResult.OK)
                 return;
             tbSciezka.Text = openFileDialog1.FileName;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            foreach (var instrument in this.instrumenty)
+            {
+                cbInstrumenty.Items.Add(instrument);
+            }
+            cbInstrumenty.DisplayMember = "Name";
         }
     }
 }

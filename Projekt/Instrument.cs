@@ -9,5 +9,7 @@ namespace Projekt
     public class Instrument
     {
         public Dictionary<string, string> dzwieki = new Dictionary<string, string>();
+
+
     }
 }

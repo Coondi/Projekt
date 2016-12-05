@@ -36,18 +36,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(186, 226);
+            this.button1.Location = new System.Drawing.Point(267, 244);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(55, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "Graj";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // btnDodajDźwięki
             // 
-            this.btnDodajDźwięki.Location = new System.Drawing.Point(13, 226);
+            this.btnDodajDźwięki.Location = new System.Drawing.Point(12, 244);
             this.btnDodajDźwięki.Name = "btnDodajDźwięki";
-            this.btnDodajDźwięki.Size = new System.Drawing.Size(86, 23);
+            this.btnDodajDźwięki.Size = new System.Drawing.Size(55, 55);
             this.btnDodajDźwięki.TabIndex = 1;
             this.btnDodajDźwięki.Text = "Dodaj dźwięki";
             this.btnDodajDźwięki.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             this.listaInstrumentów.FormattingEnabled = true;
             this.listaInstrumentów.Location = new System.Drawing.Point(12, 46);
             this.listaInstrumentów.Name = "listaInstrumentów";
-            this.listaInstrumentów.Size = new System.Drawing.Size(120, 94);
+            this.listaInstrumentów.Size = new System.Drawing.Size(120, 124);
             this.listaInstrumentów.TabIndex = 2;
             this.listaInstrumentów.SelectedIndexChanged += new System.EventHandler(this.listaInstrumentów_SelectedIndexChanged);
             // 
@@ -75,13 +75,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(334, 311);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
             this.Controls.Add(this.btnDodajDźwięki);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Orkiestra";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
