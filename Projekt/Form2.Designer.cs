@@ -53,6 +53,7 @@
             this.cbDzwieki.Name = "cbDzwieki";
             this.cbDzwieki.Size = new System.Drawing.Size(46, 21);
             this.cbDzwieki.TabIndex = 1;
+            this.cbDzwieki.SelectedIndexChanged += new System.EventHandler(this.cbDzwieki_SelectedIndexChanged);
             // 
             // btnPrzegladaj
             // 

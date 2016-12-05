@@ -47,5 +47,12 @@ namespace Projekt
             }
             cbDzwieki.DisplayMember = "Key";
         }
+
+        private void cbDzwieki_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var cb = sender as ComboBox;
+            var dzwiek = (KeyValuePair<string, string>)cb.SelectedItem;
+            tbSciezka.Text = dzwiek.Value;
+        }
     }
 }
