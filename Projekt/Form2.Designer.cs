@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.bt1Zapisz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbInstrumenty
@@ -94,12 +95,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // bt1Zapisz
+            // 
+            this.bt1Zapisz.Location = new System.Drawing.Point(524, 126);
+            this.bt1Zapisz.Name = "bt1Zapisz";
+            this.bt1Zapisz.Size = new System.Drawing.Size(75, 23);
+            this.bt1Zapisz.TabIndex = 6;
+            this.bt1Zapisz.Text = "Zapisz";
+            this.bt1Zapisz.UseVisualStyleBackColor = true;
+            this.bt1Zapisz.Click += new System.EventHandler(this.bt1Zapisz_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(624, 161);
+            this.Controls.Add(this.bt1Zapisz);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbSciezka);
@@ -125,5 +137,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button bt1Zapisz;
     }
 }

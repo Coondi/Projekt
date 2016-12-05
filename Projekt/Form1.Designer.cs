@@ -36,7 +36,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 244);
+            this.button1.Location = new System.Drawing.Point(267, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 55);
             this.button1.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // btnDodajDźwięki
             // 
-            this.btnDodajDźwięki.Location = new System.Drawing.Point(12, 244);
+            this.btnDodajDźwięki.Location = new System.Drawing.Point(12, 214);
             this.btnDodajDźwięki.Name = "btnDodajDźwięki";
             this.btnDodajDźwięki.Size = new System.Drawing.Size(55, 55);
             this.btnDodajDźwięki.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(334, 311);
+            this.ClientSize = new System.Drawing.Size(334, 273);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
             this.Controls.Add(this.btnDodajDźwięki);
