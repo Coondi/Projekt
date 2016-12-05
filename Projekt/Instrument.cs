@@ -10,6 +10,24 @@ namespace Projekt
     {
         public Dictionary<string, string> dzwieki = new Dictionary<string, string>();
 
+        public string Name
+        {
+            get
+            {
+                return this.GetType().Name;
+            }
+        }
 
+        protected Instrument()
+        {
+            dzwieki.Add("C", "");
+            dzwieki.Add("D", "");
+            dzwieki.Add("E", "");
+            dzwieki.Add("F", "");
+            dzwieki.Add("G", "");
+            dzwieki.Add("A", "");
+            dzwieki.Add("H", "");
+            dzwieki.Add("C2", "");
+        }
     }
 }

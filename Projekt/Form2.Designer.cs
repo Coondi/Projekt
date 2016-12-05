@@ -44,6 +44,7 @@
             this.cbInstrumenty.Name = "cbInstrumenty";
             this.cbInstrumenty.Size = new System.Drawing.Size(121, 21);
             this.cbInstrumenty.TabIndex = 0;
+            this.cbInstrumenty.SelectedIndexChanged += new System.EventHandler(this.cbInstrumenty_SelectedIndexChanged);
             // 
             // cbDzwieki
             // 

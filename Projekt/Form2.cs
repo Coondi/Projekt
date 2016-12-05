@@ -35,5 +35,10 @@ namespace Projekt
             }
             cbInstrumenty.DisplayMember = "Name";
         }
+
+        private void cbInstrumenty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
