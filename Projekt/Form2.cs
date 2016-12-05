@@ -38,7 +38,14 @@ namespace Projekt
 
         private void cbInstrumenty_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            var cb = sender as ComboBox;
+            var instrument = cb.SelectedItem as Instrument;
+
+            foreach (var dzwiek in instrument.dzwieki)
+            {
+                cbDzwieki.Items.Add(dzwiek);
+            }
+            cbDzwieki.DisplayMember = "Key";
         }
     }
 }
