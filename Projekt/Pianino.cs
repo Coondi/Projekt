@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Pianino : Instrument
+    public class Pianino : Instrument
     {
     }
 }

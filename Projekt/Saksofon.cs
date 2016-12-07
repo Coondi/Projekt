@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Saksofon : Instrument
+    public class Saksofon : Instrument
     {
     }
 }

@@ -12,7 +12,7 @@ namespace Projekt
 {
     public class Instrument
     {
-        public Dictionary<string, string> dzwieki = new Dictionary<string, string>();
+        public List<Dzwiek> dzwieki { get; set; }
 
         [System.Xml.Serialization.XmlIgnoreAttribute]
         public string Name
@@ -25,14 +25,15 @@ namespace Projekt
 
         protected Instrument()
         {
-            dzwieki.Add("C", "");
-            dzwieki.Add("D", "");
-            dzwieki.Add("E", "");
-            dzwieki.Add("F", "");
-            dzwieki.Add("G", "");
-            dzwieki.Add("A", "");
-            dzwieki.Add("H", "");
-            dzwieki.Add("C2", "");
+            this.dzwieki = new List<Dzwiek>();
+            dzwieki.Add(new Dzwiek("C", ""));
+            dzwieki.Add(new Dzwiek("D", ""));
+            dzwieki.Add(new Dzwiek("E", ""));
+            dzwieki.Add(new Dzwiek("F", ""));
+            dzwieki.Add(new Dzwiek("G", ""));
+            dzwieki.Add(new Dzwiek("A", ""));
+            dzwieki.Add(new Dzwiek("H", ""));
+            dzwieki.Add(new Dzwiek("C2", ""));
         }
 
         public void Serialization()

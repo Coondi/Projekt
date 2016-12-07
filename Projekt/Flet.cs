@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Flet : Instrument
+    public class Flet : Instrument
     {
     }
 }

@@ -51,14 +51,15 @@ namespace Projekt
         private void cbDzwieki_SelectedIndexChanged(object sender, EventArgs e)
         {
             var cb = sender as ComboBox;
-            var dzwiek = (KeyValuePair<string, string>)cb.SelectedItem;
+            var dzwiek = (Dzwiek)cb.SelectedItem;
             tbSciezka.Text = dzwiek.Value;
+            
         }
 
         private void btnZapisz_Click(object sender, EventArgs e)
         {          
             var instrument = cbInstrumenty.SelectedItem as Instrument;        
-            var dzwiek = (KeyValuePair<string, string>)cbDzwieki.SelectedItem;
+            var dzwiek = (Dzwiek)cbDzwieki.SelectedItem;
 
             instrument.dzwieki[dzwiek.Key] = tbSciezka.Text;
         }
