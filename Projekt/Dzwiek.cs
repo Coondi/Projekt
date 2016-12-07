@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    class Dzwiek
+    public class Dzwiek
     {
         public string Key { get; set; }
         public string Value { get;  set; }

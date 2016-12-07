@@ -52,8 +52,12 @@ namespace Projekt
         {
             var cb = sender as ComboBox;
             var dzwiek = (Dzwiek)cb.SelectedItem;
-            tbSciezka.Text = dzwiek.Value;
-            
+            //  tbSciezka.Text = dzwiek.Value;
+
+            var instrument = cbInstrumenty.SelectedItem as Instrument;
+
+            tbSciezka.Text = instrument.pobierzDzwiek(dzwiek.Key).Value;
+
         }
 
         private void btnZapisz_Click(object sender, EventArgs e)
@@ -61,7 +65,7 @@ namespace Projekt
             var instrument = cbInstrumenty.SelectedItem as Instrument;        
             var dzwiek = (Dzwiek)cbDzwieki.SelectedItem;
 
-            instrument.dzwieki[dzwiek.Key] = tbSciezka.Text;
+            instrument.pobierzDzwiek(dzwiek.Key).Value = tbSciezka.Text;
         }
 
 

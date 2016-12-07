@@ -55,5 +55,11 @@ namespace Projekt
             noweOkienko.instrumenty = this.instrumenty;
             noweOkienko.ShowDialog();   
         }
+
+        private void btnZapiszDzwieki_Click(object sender, EventArgs e)
+        {
+            foreach (var instrument in this.instrumenty)
+                instrument.Serialization();
+        }
     }
 }

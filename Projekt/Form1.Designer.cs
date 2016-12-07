@@ -32,6 +32,7 @@
             this.btnDodajDźwięki = new System.Windows.Forms.Button();
             this.listaInstrumentów = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnZapiszDzwieki = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -45,9 +46,9 @@
             // 
             // btnDodajDźwięki
             // 
-            this.btnDodajDźwięki.Location = new System.Drawing.Point(12, 214);
+            this.btnDodajDźwięki.Location = new System.Drawing.Point(2, 229);
             this.btnDodajDźwięki.Name = "btnDodajDźwięki";
-            this.btnDodajDźwięki.Size = new System.Drawing.Size(55, 55);
+            this.btnDodajDźwięki.Size = new System.Drawing.Size(80, 40);
             this.btnDodajDźwięki.TabIndex = 1;
             this.btnDodajDźwięki.Text = "Dodaj dźwięki";
             this.btnDodajDźwięki.UseVisualStyleBackColor = true;
@@ -71,12 +72,23 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Wybierz instrumenty";
             // 
+            // btnZapiszDzwieki
+            // 
+            this.btnZapiszDzwieki.Location = new System.Drawing.Point(88, 229);
+            this.btnZapiszDzwieki.Name = "btnZapiszDzwieki";
+            this.btnZapiszDzwieki.Size = new System.Drawing.Size(80, 40);
+            this.btnZapiszDzwieki.TabIndex = 4;
+            this.btnZapiszDzwieki.Text = "Zapisz dźwięki";
+            this.btnZapiszDzwieki.UseVisualStyleBackColor = true;
+            this.btnZapiszDzwieki.Click += new System.EventHandler(this.btnZapiszDzwieki_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(334, 273);
+            this.Controls.Add(this.btnZapiszDzwieki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
             this.Controls.Add(this.btnDodajDźwięki);
@@ -98,6 +110,7 @@
         private System.Windows.Forms.Button btnDodajDźwięki;
         private System.Windows.Forms.CheckedListBox listaInstrumentów;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnZapiszDzwieki;
     }
 }
 

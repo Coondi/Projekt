@@ -36,6 +36,11 @@ namespace Projekt
             dzwieki.Add(new Dzwiek("C2", ""));
         }
 
+        public Dzwiek pobierzDzwiek(string key)
+        {
+            return this.dzwieki.Find(ele => ele.Key == key);
+        }
+
         public void Serialization()
         {
             XmlSerializer xml = new XmlSerializer(this.GetType());
