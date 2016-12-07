@@ -37,18 +37,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 214);
+            this.button1.Location = new System.Drawing.Point(304, 255);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
+            this.button1.Size = new System.Drawing.Size(55, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "Graj";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // btnDodajDźwięki
             // 
-            this.btnDodajDźwięki.Location = new System.Drawing.Point(2, 229);
+            this.btnDodajDźwięki.Location = new System.Drawing.Point(2, 255);
             this.btnDodajDźwięki.Name = "btnDodajDźwięki";
-            this.btnDodajDźwięki.Size = new System.Drawing.Size(80, 40);
+            this.btnDodajDźwięki.Size = new System.Drawing.Size(90, 29);
             this.btnDodajDźwięki.TabIndex = 1;
             this.btnDodajDźwięki.Text = "Dodaj dźwięki";
             this.btnDodajDźwięki.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@
             // 
             // btnZapiszDzwieki
             // 
-            this.btnZapiszDzwieki.Location = new System.Drawing.Point(88, 229);
+            this.btnZapiszDzwieki.Location = new System.Drawing.Point(98, 255);
             this.btnZapiszDzwieki.Name = "btnZapiszDzwieki";
-            this.btnZapiszDzwieki.Size = new System.Drawing.Size(80, 40);
+            this.btnZapiszDzwieki.Size = new System.Drawing.Size(90, 29);
             this.btnZapiszDzwieki.TabIndex = 4;
             this.btnZapiszDzwieki.Text = "Zapisz dźwięki";
             this.btnZapiszDzwieki.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(334, 273);
+            this.ClientSize = new System.Drawing.Size(371, 294);
             this.Controls.Add(this.btnZapiszDzwieki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);

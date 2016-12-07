@@ -29,8 +29,11 @@ namespace Projekt
                 listaInstrumentów.DisplayMember = "Name";
 
                 var instrument = (Instrument)Activator.CreateInstance(item);
-                this.instrumenty.Add(instrument);
-            }
+                
+
+                var tmp = Instrument.Deserialization(instrument.Name);
+                this.instrumenty.Add(tmp != null ? tmp : instrument);
+           }
 
         }
 

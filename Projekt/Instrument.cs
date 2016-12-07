@@ -23,7 +23,7 @@ namespace Projekt
             }
         }
 
-        protected Instrument()
+        public Instrument()
         {
             this.dzwieki = new List<Dzwiek>();
             dzwieki.Add(new Dzwiek("C", ""));

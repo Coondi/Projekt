@@ -52,7 +52,7 @@ namespace Projekt
         {
             var cb = sender as ComboBox;
             var dzwiek = (Dzwiek)cb.SelectedItem;
-            //  tbSciezka.Text = dzwiek.Value;
+            
 
             var instrument = cbInstrumenty.SelectedItem as Instrument;
 
