@@ -28,21 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGraj = new System.Windows.Forms.Button();
             this.btnDodajDźwięki = new System.Windows.Forms.Button();
             this.listaInstrumentów = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnZapiszDzwieki = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGraj
             // 
-            this.button1.Location = new System.Drawing.Point(304, 255);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Graj";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGraj.Location = new System.Drawing.Point(298, 255);
+            this.btnGraj.Name = "btnGraj";
+            this.btnGraj.Size = new System.Drawing.Size(90, 29);
+            this.btnGraj.TabIndex = 0;
+            this.btnGraj.Text = "Graj";
+            this.btnGraj.UseVisualStyleBackColor = true;
+            this.btnGraj.Click += new System.EventHandler(this.btnGraj_Click);
             // 
             // btnDodajDźwięki
             // 
@@ -57,7 +60,7 @@
             // listaInstrumentów
             // 
             this.listaInstrumentów.FormattingEnabled = true;
-            this.listaInstrumentów.Location = new System.Drawing.Point(12, 46);
+            this.listaInstrumentów.Location = new System.Drawing.Point(2, 46);
             this.listaInstrumentów.Name = "listaInstrumentów";
             this.listaInstrumentów.Size = new System.Drawing.Size(120, 124);
             this.listaInstrumentów.TabIndex = 2;
@@ -66,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 21);
+            this.label1.Location = new System.Drawing.Point(-1, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 3;
@@ -82,17 +85,36 @@
             this.btnZapiszDzwieki.UseVisualStyleBackColor = true;
             this.btnZapiszDzwieki.Click += new System.EventHandler(this.btnZapiszDzwieki_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(134, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(254, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(131, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Dodaj melodię";
+            
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(371, 294);
+            this.ClientSize = new System.Drawing.Size(400, 294);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnZapiszDzwieki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
             this.Controls.Add(this.btnDodajDźwięki);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGraj);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -106,11 +128,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGraj;
         private System.Windows.Forms.Button btnDodajDźwięki;
         private System.Windows.Forms.CheckedListBox listaInstrumentów;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnZapiszDzwieki;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
