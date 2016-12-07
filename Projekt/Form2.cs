@@ -55,14 +55,14 @@ namespace Projekt
             tbSciezka.Text = dzwiek.Value;
         }
 
-        private void bt1Zapisz_Click(object sender, EventArgs e)
-        {
-            var cbI = sender as ComboBox;
-            var instrument = cbI.SelectedItem as Instrument;
-            var cbD = sender as ComboBox;
-            var dzwiek = (KeyValuePair<string, string>)cbD.SelectedItem;
+        private void btnZapisz_Click(object sender, EventArgs e)
+        {          
+            var instrument = cbInstrumenty.SelectedItem as Instrument;        
+            var dzwiek = (KeyValuePair<string, string>)cbDzwieki.SelectedItem;
 
             instrument.dzwieki[dzwiek.Key] = tbSciezka.Text;
         }
+
+
     }
 }
