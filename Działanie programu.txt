@@ -1,0 +1,27 @@
+Program odtwarza melodiê wpisan¹ przez u¿ytkownika dla wybranych z listy
+instrumentów.
+
+Jak korzystaæ z programu:
+1. Wybieramy z listy instrumentów te, dla których bêdziemy chcieli zagraæ
+melodiê.
+2. Wybieramy przycisk "Dodaj dŸwiêki".
+3. Po kolei dla ka¿dego interesuj¹cego nas instrumentu, przypisujemy
+odpowiedni¹ œcie¿kê dla dŸwiêków, zapisuj¹c ka¿dy wybrany dŸwiêk.
+4. Po przypisaniu wszystkich interesuj¹cych nas dŸwiêków, zamykamy okienko
+i po powrocie do g³ównego okna, klikamy przycisk "Zapisz dŸwiêki".
+5. W okienku po prawej stronie wpisujemy ci¹g du¿ych liter (bez przerw)
+odpowiadaj¹cy interesuj¹cej nas melodii.
+6. Gry wszystko mamy gotowe, wciskamy przycisk "Graj".
+
+Uwagi:
+- DŸwiêk C2 u¿yty jest w programie jako Z.
+- Program porównuje wybrane przez nas instrumenty z tymi, dla których
+wybraliœmy dŸwiêki w drugim okienku.
+- Je¿eli w okienku melodii wpiszemy literê dŸwiêku, dla którego
+nie przypisaliœmy œcie¿ki, wyœwietli komunikat o b³êdzie.
+- Je¿eli bêdziemy chcieli dodaæ do programu nowy instrument, musimy mu
+przypisaæ dziedziczenie z klasy Instrument, a program sam doda nowy
+instrument do wszystkich odpowiednich okienek.
+
+
+Wykonali: Agata Dotka, Konrad Bywald
