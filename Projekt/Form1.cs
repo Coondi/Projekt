@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 
+
 namespace Projekt
 {
     public partial class Form1 : Form
@@ -68,18 +69,19 @@ namespace Projekt
 
         private void btnGraj_Click(object sender, EventArgs e)
         {
-            foreach (var item in listaInstrumentów.SelectedItems)
+            foreach (Type item in listaInstrumentów.SelectedItems)
             {
                 foreach (var item2 in this.instrumenty)
                 {
                     if (item.ToString().Remove(0, 8) == item2.Name)
-                    {
-                        MessageBox.Show("Test");
-                        wybrane.Add(item2);
+                    {                       
+                        this.wybrane.Add(item2);
                     }
                 }
-
             }
+
+
+
         }
     }
 }
