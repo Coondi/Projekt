@@ -87,8 +87,11 @@ namespace Projekt
 
             var melodia = Instrument.zamiana(tbMelodia.Text);
 
-           // foreach()
-
+            foreach (var nazwaDzwieku in melodia)
+            {
+                Parallel.ForEach(this.wybrane, instrument => instrument.Graj(nazwaDzwieku));
+                System.Threading.Thread.Sleep(1000); // w milisekundach            
+            }
 
         }
     }

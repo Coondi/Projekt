@@ -77,6 +77,7 @@ namespace Projekt
             return new string[] { "C", "C", "F", "F", "G", "G", "F" };
         }
 
+
         public void Graj(string nazwaDzwieku)
         {
             foreach(var dzwiek in this.dzwieki)
