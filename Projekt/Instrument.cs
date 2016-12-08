@@ -33,7 +33,7 @@ namespace Projekt
             dzwieki.Add(new Dzwiek("G", ""));
             dzwieki.Add(new Dzwiek("A", ""));
             dzwieki.Add(new Dzwiek("H", ""));
-            dzwieki.Add(new Dzwiek("C2", ""));
+            dzwieki.Add(new Dzwiek("Z", "")); // jest to dzwiek C2
         }
 
         public Dzwiek pobierzDzwiek(string key)
@@ -74,9 +74,11 @@ namespace Projekt
         public static string[] zamiana(string melodia)
         {
             //testowe
-            return new string[] { "C", "C", "F", "F", "G", "G", "F" };
-        }
+            // return new string[] { "C", "C", "F", "F", "G", "G", "F" };
 
+            string[] tab = melodia.Select(ele => ele.ToString()).ToArray();
+            return tab;
+        }
 
         public void Graj(string nazwaDzwieku)
         {

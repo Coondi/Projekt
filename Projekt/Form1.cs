@@ -69,7 +69,8 @@ namespace Projekt
 
         public void wybierzInstrument()
         {
-            foreach (Type item in listaInstrumentów.SelectedItems)
+            this.wybrane.Clear();
+            foreach (Type item in listaInstrumentów.CheckedItems)
             {
                 foreach (var item2 in this.instrumenty)
                 {
@@ -90,9 +91,11 @@ namespace Projekt
             foreach (var nazwaDzwieku in melodia)
             {
                 Parallel.ForEach(this.wybrane, instrument => instrument.Graj(nazwaDzwieku));
-                System.Threading.Thread.Sleep(1000); // w milisekundach            
+                System.Threading.Thread.Sleep(800); // w milisekundach            
             }
 
         }
+
+       
     }
 }
