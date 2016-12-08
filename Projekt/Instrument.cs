@@ -70,5 +70,23 @@ namespace Projekt
             reader.Close();
             return wynik;
         }
+
+        public static string[] zamiana(string melodia)
+        {
+            //testowe
+            return new string[] { "C", "C", "F", "F", "G", "G", "F" };
+        }
+
+        public void Graj(string nazwaDzwieku)
+        {
+            foreach(var dzwiek in this.dzwieki)
+            {
+                if(nazwaDzwieku == dzwiek.Key)
+                {
+                    dzwiek.Graj();                    
+                }                    
+            }
+        }
+        
     }
 }

@@ -33,7 +33,7 @@
             this.listaInstrumentów = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnZapiszDzwieki = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbMelodia = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -85,13 +85,13 @@
             this.btnZapiszDzwieki.UseVisualStyleBackColor = true;
             this.btnZapiszDzwieki.Click += new System.EventHandler(this.btnZapiszDzwieki_Click);
             // 
-            // textBox1
+            // tbMelodia
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 46);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 40);
-            this.textBox1.TabIndex = 5;
+            this.tbMelodia.Location = new System.Drawing.Point(134, 46);
+            this.tbMelodia.Multiline = true;
+            this.tbMelodia.Name = "tbMelodia";
+            this.tbMelodia.Size = new System.Drawing.Size(254, 40);
+            this.tbMelodia.TabIndex = 5;
             // 
             // label2
             // 
@@ -109,7 +109,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(400, 294);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbMelodia);
             this.Controls.Add(this.btnZapiszDzwieki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaInstrumentów);
@@ -133,7 +133,7 @@
         private System.Windows.Forms.CheckedListBox listaInstrumentów;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnZapiszDzwieki;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbMelodia;
         private System.Windows.Forms.Label label2;
     }
 }

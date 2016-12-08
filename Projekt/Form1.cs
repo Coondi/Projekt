@@ -85,6 +85,9 @@ namespace Projekt
         {
             wybierzInstrument();
 
+            var melodia = Instrument.zamiana(tbMelodia.Text);
+
+           // foreach()
 
 
         }
