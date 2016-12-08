@@ -88,8 +88,9 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(134, 46);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 20);
+            this.textBox1.Size = new System.Drawing.Size(254, 40);
             this.textBox1.TabIndex = 5;
             // 
             // label2
@@ -100,7 +101,6 @@
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Dodaj melodię";
-            
             // 
             // Form1
             // 

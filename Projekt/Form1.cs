@@ -67,18 +67,23 @@ namespace Projekt
                 instrument.Serialization();
         }
 
-        private void btnGraj_Click(object sender, EventArgs e)
+        public void wybierzInstrument()
         {
             foreach (Type item in listaInstrumentów.SelectedItems)
             {
                 foreach (var item2 in this.instrumenty)
                 {
-                    if (item.ToString().Remove(0, 8) == item2.Name)
-                    {                       
+                    if (item.Name == item2.Name)
+                    {
                         this.wybrane.Add(item2);
                     }
                 }
             }
+        }
+
+        private void btnGraj_Click(object sender, EventArgs e)
+        {
+            wybierzInstrument();
 
 
 
